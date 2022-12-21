@@ -2,7 +2,7 @@ package com.driver;
 
 public class Main {
 
-    public static class A {
+    public class A {
         String meth() {
             return "Invoking method from class A";
         }
@@ -11,10 +11,8 @@ public class Main {
     public static class  B extends A {
 
         // static method cannot give or take from non-static
-
-
         @Override
-        String meth(){
+        public String meth(){
             return "Method is overridden in Extendend class B";
         }
     }
